@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>a little note</title>
+<title>My quiet admiration</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito:wght@0,400;0,600&display=swap" rel="stylesheet">
@@ -45,6 +45,7 @@
     line-height:1.82;color:var(--ink);margin:0 0 1.45em;letter-spacing:.003em;}
   .letter p:first-child{margin-top:0;}
   .reveal{margin-top:2.1em!important;margin-bottom:0!important;}
+  .loveline{margin-top:1.15em!important;margin-bottom:0!important;}
   .pola-figure{margin:2.2rem 0 0 auto;width:max-content;max-width:100%;position:relative;z-index:1;}
   .polaroid{position:relative;background:#fff;padding:10px 10px 30px;border-radius:3px;
     box-shadow:0 2px 5px rgba(0,0,0,.10),0 16px 30px -16px rgba(0,0,0,.38);
@@ -71,9 +72,9 @@
     right:calc(env(safe-area-inset-right,0px) + clamp(12px,4vw,26px));
     bottom:calc(env(safe-area-inset-bottom,0px) + clamp(12px,4vw,26px));
     display:flex;align-items:center;gap:10px;}
-  .hint{font-family:"Nunito",sans-serif;font-size:.74rem;color:var(--ink-soft);
-    background:var(--card);border:1px solid var(--edge);padding:6px 11px;border-radius:20px;
-    box-shadow:0 6px 16px -8px rgba(0,0,0,.35);white-space:nowrap;
+  .hint{font-family:"Nunito",sans-serif;font-size:.76rem;color:#fff;
+    background:var(--heart);border:none;padding:7px 13px;border-radius:20px;
+    box-shadow:0 6px 16px -8px rgba(214,120,140,.5);white-space:nowrap;
     opacity:0;transform:translateX(6px);transition:opacity .4s,transform .4s;pointer-events:none;}
   .hint.show{opacity:1;transform:translateX(0);}
   .mbtn{position:relative;width:52px;height:52px;border-radius:50%;border:1px solid var(--edge);
@@ -121,11 +122,11 @@
     <article class="letter">
       <p>There is this woman I can't stop admiring.</p>
       <p>Aside from her physical beauty that everyone can see, there are traits that not everyone is lucky enough to see.</p>
-      <p>The smile I fall into every time. Bright, lovely, the contagious kind. The kind of smile that her eyes seem to light up when you're close I saw it best the day we finally went to the place she'd always wanted to see. She was so excited she smiled the whole day and ran ahead like a carefree kid. I was happy just to be there, but seeing her made it so much better. I'm grateful I get to see that side of her.</p>
-      <p>She's sharp, strong, and capable. I watch how she moves through her days. The long ones. The heavy ones, more than anyone should have to carry. She often has to manage heavy workloads, deal with people, and sometimes a family problem. And somehow she still finds a way through. I've learned so much from the way she sees and handles things.</p>
-      <p>She's kind. I've seen how she is with the people she loves. She loves the people that her loved ones love, too. And with strangers she owes nothing to, she shares her blessings and gives sympathy. She doesn't need to experience someone's situation to relate. Never hesitating to help, always able to feel what someone else is feeling. I'm grateful I get to see a heart like that. A heart like that is rare.</p>
-      <p class="reveal">That woman is you, mahal. And I'm grateful, every day, to have you in my life.</p>
-      <p>I love you. I love you so much.</p>
+      <p>The smile I fall into every time. Bright, lovely, the contagious kind. The kind of smile that her eyes seem to light up when you're close. I saw it best the day we finally went to the place she'd always wanted to see. She was so excited she smiled the whole day and ran ahead like a carefree kid. Cheering, minding nothing, like she's a kid again. And somehow, seeing her that way gives me comfort too. Reminds me to enjoy life no matter what. I'm grateful I get to see and get inspired by that side of her.</p>
+      <p>She's smart, strong, and capable. I watch how she moves through her days. The long ones. The heavy ones, more than anyone should have to carry. She wakes up early and goes back home at night. She often has to manage heavy workloads, deal with people, and sometimes a family problem. And somehow she still finds a way through. I've learned so much from the way she sees and handles things.</p>
+      <p>She's kind. I've seen how she is with the people she loves. She loves the people that her loved ones love, too. And with strangers she owes nothing to, she shares her blessings and gives sympathy. She doesn't need to have lived someone's situation to relate. Never hesitating to help, always able to feel what someone else is feeling. I'm grateful I get to see a heart like that. A heart like that is rare.</p>
+      <p class="reveal">That woman is you, mahal. I admire you a lot po. And I'm grateful, every day, to have you in my life. I hope you can see and recognize these traits in yourself as well as I do.</p>
+      <p class="loveline">I love you. I love you so much.</p>
     </article>
     <figure class="pola-figure">
       <div class="polaroid">
@@ -150,7 +151,7 @@
       var btn=document.getElementById('mbtn');var hint=document.getElementById('hint');
       var TARGET=0.30, fadeTimer=null;
       setTimeout(function(){hint.classList.add('show');},900);
-      setTimeout(function(){hint.classList.remove('show');},5200);
+      setTimeout(function(){hint.classList.remove('show');},6000);
       function fadeTo(target,done){clearInterval(fadeTimer);
         fadeTimer=setInterval(function(){var d=target-audio.volume;
           if(Math.abs(d)<0.03){audio.volume=target;clearInterval(fadeTimer);if(done)done();}
